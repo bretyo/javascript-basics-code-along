@@ -341,7 +341,9 @@ function multiplier(x, y){
 // This function should return a string that is the result of concatenating the greeting and name parameters
 // The returned value should include a space between the greeting and name parameters
 
-// Code here
+function sayHello(greeting, name){
+  return greeting + " " + name;
+}
 
 
 
@@ -352,7 +354,12 @@ function multiplier(x, y){
   // the first property should be exerciseName with the value of the first parameter
   // the second property should be duration with the value of the second parameter
 
-// Code here
+function makeExercise(exerciseN, d){
+  return {
+    exerciseName: exerciseN,
+    duration: d
+  }
+}
 
 
 
@@ -368,7 +375,12 @@ let age = "TBD";
 // The variable age will be changed during testing
 
 function isOldEnough(){
-  // Code here
+  if(age > 21){
+    return "old enough"
+  }
+  else{
+    return "not yet";
+  }
 };
 
 
@@ -385,7 +397,12 @@ let workEthic = "TBD";
 // The variable workEthic will be changed during testing
 
 function successPredictor(){
-  // Code here
+  if(workEthic === "great"){
+    return "success at DevMountain";
+  }
+  else{
+    return"failure at DevMountain";
+  }
 };
 
 
@@ -402,7 +419,10 @@ let cookieType = "TBD";
 // The variable cookieType will be changed during testing
 
 function eatOrTrash(){
-  // Code here
+  if(cookieType==="raisin"){
+    return "throw in trash";
+  }
+  return "eat";
 };
 
 
@@ -420,7 +440,10 @@ let yourTeamScore = "TBD";
 // The myTeamScore and yourTeamScore variables will be changed during testing
 
 function finalScore(){
-  // Code here
+  if(myTeamScore > yourTeamScore){
+    return "we are the champions";
+  }
+  return ":(";
 };
 
 
@@ -441,7 +464,15 @@ age = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function findCorrectTransportation(){
-  // Code here
+  if(age >= 3 && age <=7){
+    return "tricycle";
+  }
+  else if(age >= 8 && age <=15){
+    return "bicycle";
+  }
+  else if(age > 15){
+    return "car";
+  }
 };
 
 
@@ -462,7 +493,10 @@ let temp = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function doIGetIceCream(){
-  // Code here
+  if(temp === "hot" && cash){
+    return "Get Ice Cream!";
+  }
+    return "Save up for another day."
 };
 
 
@@ -482,7 +516,9 @@ let work = "TBD";
 // The chores and work variables will always be true or false and will be changed during testing
 
 function doIHaveFreeTime(){
-  // Code here
+  if(!chores||!work){
+    return "free time!";
+  }
 };
 
 
@@ -504,7 +540,9 @@ let brakes = "TBD";
 // The brakes variables will always be a boolean and will be changed during testing
 
 function setCrash(){
-  // Code here
+  if(currentSpeed === "fast" && !brakes){
+    crash=true;
+  }
 };
 
 
@@ -526,7 +564,14 @@ user = {
 // Use the if and else keywords in your solution
 // The arguments passed into makePurchase will always be numbers and will be changed during testing
 
-// Code here
+function makePurchase(priceOfItem){
+  if(priceOfItem <= user.total){
+    user.total -= priceOfItem;
+  }
+  else{
+    return "not enough funds";
+  }
+}
 
 
 
@@ -557,4 +602,14 @@ function sleep(){
 // Use the if and else keywords in your solution
 // The arguments passed into decisionMaker will always be true or false and will be changed during testing
 
-// Code here
+function decisionMaker(hungry, tired){
+  if(hungry && !tired){
+    return eat();
+  } 
+  else if(!hungry && tired) {
+    return sleep();
+  }
+  else{
+    return "undecided";
+  }
+}
