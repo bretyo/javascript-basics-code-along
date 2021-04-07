@@ -4,7 +4,8 @@
 // Make a variable named greeting with a data type of string that says "Hi" (with double quotes)
 // After the first variable, make a variable named farewell with a data type of string that says 'Goodbye' (with single quotes)
 
-// Code here
+let greeting = "Hi";
+let farewell = 'Goodbye';
 
 
 
@@ -14,7 +15,9 @@
 // Next, make a variable called userName with data types of string that is your name
 // Concatenate hello and userName together and store the result in a variable called salutation
 
-//Code here
+let hello = "Hello";
+let userName = "Bret";
+let salutation = hello + userName;
 
 
 
@@ -22,7 +25,7 @@
 
 //Create a variable called seven that has a number data type with the value of 7
 
-//Code here
+let seven = 7;
 
 
 
@@ -31,7 +34,7 @@
 // Make a variable called money with a value equal to the amount you wish to have in your bank account in 2 years
 // This datatype should be a number
 
-//Code here
+let money = 999999999999999999999999999;
 
 
 
@@ -39,7 +42,7 @@
 
 // Make a variable called awesome and give it a value of the boolean data type true
 
-//Code here
+let awesome = true;
 
 
 
@@ -53,7 +56,7 @@ let myCar = "Jeep";
 // Set the variable myCar to be null
 
 
-//Code here
+myCar = null;
 
 
 
