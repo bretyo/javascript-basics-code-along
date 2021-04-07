@@ -117,7 +117,21 @@ let gameScores = [
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
 let people = [
-
+  {
+    name: "bob",
+    gender: "boy",
+    height: 1
+  },
+  {
+    name: "rob",
+    gender: "boy",
+    height: 1
+  },
+  {
+    name: "job",
+    gender: "boy",
+    height: 1
+  }
 ]
 
 
@@ -127,7 +141,11 @@ let people = [
 // Create a variable called cowboy which should be an object
 // This object should have 3 properties: name (string), state (string), favoriteCountrySong (string)
 
-//Code here
+let cowboy = {
+  name: "robert",
+  state: "California",
+  favoriteCountrySong: "Gangsta's Paradise"
+}
 
 
 
@@ -157,7 +175,14 @@ function launch() {
 //   the function launch (provided for you)
 
 
-//Code here
+let dataTypes = [
+  42,
+  "meaning",
+  true,
+  [1,2,3,4,5],
+  spaceship,
+  launch
+]
 
 
 
@@ -166,7 +191,7 @@ function launch() {
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
 
 function sum(num1, num2){
-  return // Code here
+  return num1 + num2;
 };
   
 
@@ -175,13 +200,14 @@ function sum(num1, num2){
   
 // Create two variables number1 and number2 and assign them number values
 
-// Code here
+let number1 = 5;
+let number2 = 6;
 
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
 function multiply() {
-  return // Code here
+  return number1*number2;
 };
 
 
@@ -197,7 +223,7 @@ let food = 'pizza';
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
 function favFood(){
-  return // Code here
+  return `My favorite food is ${food}`;
 };
 
 
@@ -214,7 +240,9 @@ let theBoss;
 // the function assigns the value of theName to theBoss variable
 
 function assignName(name){
-  // Code here
+  if(name === theName){
+    theBoss = theName;
+  }
 };
 
 
@@ -234,7 +262,7 @@ let user = {
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
 function getName(userObj){
-  return // Code here
+  return user.name;
 };
 
 
@@ -256,7 +284,7 @@ let calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar){
-  return // Code here
+  return calendar.weekDays[2];
 }
 
 
@@ -265,7 +293,9 @@ function getWeekDay(calendar){
 
 // Create a function called "fn" that takes in a parameter and returns that parameter
 
-// Code here
+function fn(butt){
+  return butt;
+}
 
 
 
@@ -280,7 +310,9 @@ let lastName = "Jones";
 // Create a function called createName that takes in no parameters and returns the result of concatenating firstName and lastName (provided)
 // The returned value should include a space between the first and last names and should use concatenation (not template strings)
 
-// Code here
+function createName(){
+  return firstName+ " "+ lastName;
+}
 
 
 
@@ -288,7 +320,9 @@ let lastName = "Jones";
 
 // Create a function called showMeSeven that returns the number 7
 
-// Code here
+function showMeSeven(){
+  return 7;
+}
 
 
 
@@ -296,8 +330,9 @@ let lastName = "Jones";
 
 // Create a function called multiplier that takes two parameters (numbers) and returns the product of the two parameters
 
-// Code here
-
+function multiplier(x, y){
+  return x*y;
+}
 
 
 //////////////////PROBLEM 23////////////////////
