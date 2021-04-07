@@ -65,7 +65,7 @@ myCar = null;
 // Create a variable called users which should be an array with 4 items in it
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
-//Code here
+let users = [{name: "Bob",age: 9},{name: "Rob",age: 19},{name: "Job",age: 29},{name: "Tim",age: 3}]
 
 
 
@@ -76,7 +76,24 @@ myCar = null;
 // Each property will have a corresponding value which will be an object with one property called "hobbies"
 // Each hobbies property will have a corresponding value which will be an object
 
-//Code here
+let family = {
+  bob: {
+    hobbies:{
+      
+    }
+  },
+  rob: {
+    hobbies:{
+      
+    }
+  },
+  job: {
+    hobbies:{
+      
+    }
+  },
+
+};
 
 
 
@@ -85,7 +102,12 @@ myCar = null;
 // Create a variable called gameScores which should be an array with 3 items in it
 // Each item should be an array with 2 items (numbers) in each array
 
-//Code here
+let gameScores = [
+  [4,4],
+  [5,4],
+  [6,4]
+
+];
 
 
 
@@ -94,7 +116,9 @@ myCar = null;
 // Create a variable called people which should be an array of 3 objects
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
-//Code here
+let people = [
+
+]
 
 
 
